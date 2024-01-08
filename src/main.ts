@@ -10,6 +10,7 @@ async function bootstrap() {
     transport: Transport.RMQ,
     options: {
       urls: ['amqps://qgskholi:ZHnzxLfW3KglP05tiKWMKSJ2JXAdiKcV@prawn.rmq.cloudamqp.com/qgskholi'],
+      noAck: false,
       queue: 'admin-backend'
     }
   });
